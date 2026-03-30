@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AppBank Proxy 2026
 
 ## Secure Agentic Twin System
@@ -431,3 +432,6 @@ Start with the backend control plane first:
 4. proxy execution token issuance
 
 Only then connect STT, TTS, and frontend session orchestration.
+=======
+# demo_concept
+>>>>>>> 7c1d7f0584cc9110ae970995e009e8bd7532bd61
