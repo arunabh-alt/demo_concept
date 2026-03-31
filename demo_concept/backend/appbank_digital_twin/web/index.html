@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppBank Voice Pipeline</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <main class="layout">
+        <section class="hero">
+            <p class="eyebrow">Voice Demo</p>
+            <h1>Amazon Transcribe to Nova, with one visible action path.</h1>
+            <p class="lede">Use the microphone, watch live transcript updates, inspect the detected intent, and review the mock API response in one place.</p>
+            <div class="controls">
+                <button id="startButton" class="primary">Start Mic</button>
+                <button id="stopButton" class="secondary" disabled>Stop</button>
+            </div>
+            <p id="statusPill" class="status idle">Idle</p>
+        </section>
+
+        <section class="panel-grid">
+            <article class="panel">
+                <h2>Live Transcript</h2>
+                <pre id="transcriptOutput">No transcript yet.</pre>
+            </article>
+
+            <article class="panel">
+                <h2>Intent Detection</h2>
+                <pre id="intentOutput">Waiting for Nova classification.</pre>
+            </article>
+
+            <article class="panel">
+                <h2>Action Result</h2>
+                <pre id="actionOutput">Waiting for routed action.</pre>
+            </article>
+
+            <article class="panel full-width">
+                <h2>Event Log</h2>
+                <pre id="eventLog">Ready.</pre>
+            </article>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
